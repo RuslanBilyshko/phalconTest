@@ -1,0 +1,7 @@
+<h2>Удалить сотрудника</h2>
+<p>Вы действительно хотите удалить <strong><?=$first_name." ".$name?></strong></p>
+<form action="/user/delete/<?=$id?>" method="post">
+    <? foreach ($form as $element):?>
+        <?=$element?>
+    <? endforeach ?>
+</form>

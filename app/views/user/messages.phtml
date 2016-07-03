@@ -1,0 +1,15 @@
+
+
+<?
+$messages = $this->flashSession->getMessages($element->getName());
+if(count($messages) > 0) :
+  ?>
+  <pre>
+  <? var_dump($messages) ?>
+</pre>
+  <ul>
+    <? foreach($messages as $mess): ?>
+      <li><?=$mess?></li>
+    <? endforeach ?>
+  </ul>
+<? endif ?>
